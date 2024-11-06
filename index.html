@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Ordering System</title>
+    <style>
+        /* Add some basic styling here */
+        #chatbox {
+            border: 2px solid #9e9a9a;
+            padding: 10px;
+            height: 300px;
+            width: 30%;
+            overflow:auto;
+        }
+        #input{
+            width: 30%;
+            height: 50px;
+            padding: 10px;
+            font-size: large;
+            color: #111;
+            margin-top: 3px;
+        }
+        h1{
+            border: 2px solid #9e9a9a;
+            font-size: xx-large;
+            width: 30%;
+            padding: 10px;
+            position: relative;
+            top: 20px;
+        }
+        .message {
+            margin: 5px 0;
+            
+        }
+        .user {
+            color: blue;
+        }
+        .bot {
+            color: green;
+        }
+        #main-container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+    <h1>Food Chat Bot</h1>
+    <div id="chatbox"></div>
+    <input id="input" type="text" placeholder="Type your message here..." />
+</div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
